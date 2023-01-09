@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://peoplepediaapi.onrender.com/api/";
+const BASE_URL = "https://shopapi-iish.onrender.com/api/";
 const storage = JSON.parse(localStorage.getItem("persist:primary"));
 const user = storage != null ? JSON.parse(storage.user).currentUser : null;
 const TOKEN = user != null ? user.accessToken : "";
