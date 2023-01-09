@@ -21,9 +21,9 @@ const Products = ({ category, filters, sort }) => {
 			try {
 				const response = await axios.get(
 					category
-						? "https://peoplepediaapi.onrender.com/api/product/?category=" +
+						? "https://shopapi-iish.onrender.com/api/product/?category=" +
 								category
-						: "https://peoplepediaapi.onrender.com/api/product"
+						: "https://shopapi-iish.onrender.com/api/product"
 				);
 				setProducts(response.data);
 			} catch (err) {
